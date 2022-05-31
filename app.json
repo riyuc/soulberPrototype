@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "new_soulber_app",
-    "slug": "new_soulber_app",
+    "name": "New_soulber_screens_app",
+    "slug": "New_soulber_screens_app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
