@@ -1,25 +1,17 @@
-import { StatusBar } from "expo-status-bar";
-import React, { useState } from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
-import { registerRootComponent } from "expo";
+import { createAppContainer } from "react-navigation";
+import { createStackNavigator } from "react-navigation-stack";
+import DependantScreen from "./src/Screens/DependantScreen";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Tap Here</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+const navigator = createStackNavigator(
+  {
+    Dependant: DependantScreen,
+  },
+  {
+    initialRouteName: "Dependant",
+    defaultNavigationOptions: {
+      title: "Soulber_Prototype",
+    },
+  }
+);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  text: {
-    fontSize: 30,
-  },
-});
+export default createAppContainer(navigator);
