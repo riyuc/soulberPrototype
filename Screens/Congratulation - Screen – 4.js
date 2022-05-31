@@ -1,9 +1,9 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
-import { registerRootComponent } from "expo";
 
 export default function App() {
+  const [name, setName] = useState("Mera");
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Tap Here</Text>
