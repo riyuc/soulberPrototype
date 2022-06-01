@@ -24,7 +24,7 @@ const features = [
   { id: 4, icon: integration_icon, title: " Reintegration" },
 ];
 
-const DependantScreen = ({ navigation }) => {
+const GuardianScreen = ({ navigation }) => {
   return (
     <Fragment>
       <TouchableOpacity style={styles.icon_1}>
@@ -45,7 +45,7 @@ const DependantScreen = ({ navigation }) => {
         </TouchableOpacity>
       </View>
       <View style={styles.container_2}>
-        <Text style={styles.text_3}>Free</Text>
+        <Text style={styles.text_3}>$29.99/month</Text>
         <FlatList
           key={features.id}
           keyExtractor={(item) => item.id.toString()}
@@ -89,11 +89,11 @@ const styles = StyleSheet.create({
   text_1: {
     fontSize: 25,
     fontWeight: "800",
+    color: "silver",
   },
   text_2: {
     fontSize: 25,
     fontWeight: "800",
-    color: "silver",
   },
   container_2: {
     // borderWidth: 1,
@@ -149,4 +149,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DependantScreen;
+export default GuardianScreen;
