@@ -3,8 +3,9 @@ import { StyleSheet,} from "react-native";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from "@react-navigation/native";
 import OnboardingScreen from './Screens/OnboardingScreen';
-import OnboardingRegister from './Screens/OnboardingRegister';
-import Signed from './Screens/Signed';
+import OnboardingLogin from './Screens/OnboardingLogin';
+import Register from './Screens/Register';
+import ForgetPassword from './/Screens/ForgetPassword';
 
 
 // const navigator = createStackNavigator(
@@ -34,14 +35,20 @@ export default function App() {
               headerShown: false
             }}/>
           <Stack.Screen 
-            name ="OnboardingRegister"
-            component={OnboardingRegister}
+            name ="OnboardingLogin"
+            component={OnboardingLogin}
             options={{
               headerShown: false
             }}/>
             <Stack.Screen 
-            name ="Signed"
-            component={Signed}
+            name ="Register"
+            component={Register}
+            options={{
+              headerShown: false
+            }}/>
+            <Stack.Screen 
+            name ="ForgetPassword"
+            component={ForgetPassword}
             options={{
               headerShown: false
             }}/>

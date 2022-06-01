@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, ImageBackground,} from "react-native";
 import onboarding from '../assets/onboarding.png'
-import { NavigationContainer } from "@react-navigation/native";
 import FlatButton from "../shared/green-button";
 
 export default function OnboardingScreen({navigation}) {
@@ -11,7 +10,7 @@ export default function OnboardingScreen({navigation}) {
       source={onboarding}
       style={styles.container}>
       <FlatButton text="Get Started" onPress={()=>
-      navigation.navigate('OnboardingRegister', {name: 'Register'}
+      navigation.navigate('OnboardingLogin', {name: 'Login'}
       )}/>
     </ImageBackground>
   );
