@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, ImageBackground,} from "react-native";
-import onboarding from '../assets/onboarding.png'
+import onboarding from '../assets/images/onboarding.png'
 import FlatButton from "../shared/green-button";
 
 export default function OnboardingScreen({navigation}) {

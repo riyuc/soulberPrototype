@@ -3,7 +3,7 @@ import { useState } from "react";
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, ImageBackground } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import BouncyCheckbox from "react-native-bouncy-checkbox";
-import backgroundMountain from '../assets/soulberMountain.jpeg';
+import backgroundMountain from '../assets/images/soulberMountain.jpeg';
 
 
 const OnboardingLogin = ({navigation}) =>{
