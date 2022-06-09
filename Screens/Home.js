@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView, Image, FlatList } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, Image, FlatList, TouchableOpacity } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import profileImage from '../assets/images/profileImage.png';
@@ -23,10 +23,12 @@ const Home = ({navigation}) => {
     const renderFunctionData = ({item}) => {
         return(
         <View style={styles.functionItemWrapper}>
-            <View style={styles.functionItemCard}>
+            <TouchableOpacity style={styles.functionItemCard}
+                onPress={() => navigation.navigate(item.title)}
+            >
                 <Entypo name={item.id} size={30} color="black" style ={styles.functionItemIcon}/>
                 <Text style ={styles.functionText}>{item.title}</Text>
-            </View>    
+            </TouchableOpacity>
         </View>
         );
     };
@@ -76,6 +78,7 @@ const Home = ({navigation}) => {
                         <View style= {styles.functionAppWrapper}>
                             <View style={styles.functionWrapper}>
                                 <FlatList
+                                    onpress={() => navigation.navigate(item.title)}
                                     data = {functionData}
                                     renderItem = {renderFunctionData}
                                     keyExtractor = {(item) => item.id}

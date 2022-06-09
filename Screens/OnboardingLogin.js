@@ -10,7 +10,7 @@ const OnboardingLogin = ({navigation}) =>{
     return (
         <View style={styles.mainView}>
             <Ionicons
-             onPress={() => navigation.navigate('OnboardingScreen', {name: 'OnboardingScreen'})}
+             onPress={() => navigation.navigate('Dependant', {name: 'Dependant'})}
              name="chevron-back-circle-sharp" 
              size={40} 
              style={{marginLeft:15 }} 

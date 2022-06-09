@@ -5,6 +5,16 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import OnboardingScreen from './Screens/OnboardingScreen';
 import OnboardingLogin from './Screens/OnboardingLogin';
+import DependantScreen from "./Screens/DependantScreen";
+import GuardianScreen from "./Screens/GuardianScreen";
+import RegScreen from "./Screens/RegScreen";
+import EmailScreen from "./Screens/EmailScreen";
+import HousingScreen from "./Screens/HousingScreen";
+import JobScreen from "./Screens/JobScreen";
+import MeetingScreen from "./Screens/MeetingScreen";
+import ForumScreen from "./Screens/ForumScreen";
+import TherapyScreen from "./Screens/TherapyScreen";
+import AwardScreen from "./Screens/AwardScreen";
 import Register from './Screens/Register';
 import ForgetPassword from './Screens/ForgetPassword';
 import Home from './Screens/Home';
@@ -86,37 +96,97 @@ export default function App() {
   return(
     <NavigationContainer>
         <Stack.Navigator>
+        <Stack.Screen 
+          name ="OnboardingScreen"
+          component ={OnboardingScreen}
+          options={{
+            headerShown: false
+          }}/>
           <Stack.Screen 
-            name ="OnboardingScreen"
-            component ={OnboardingScreen}
+            name ="Dependant"
+            component ={DependantScreen}
             options={{
               headerShown: false
             }}/>
+          <Stack.Screen 
+            name ="Guardian"
+            component ={GuardianScreen}
+            options={{
+              headerShown: false
+            }}/>
+          <Stack.Screen 
+          name ="Reg"
+          component ={RegScreen}
+          options={{
+            headerShown: false
+          }}/>
+          <Stack.Screen 
+          name ="Email"
+          component ={EmailScreen}
+          options={{
+            headerShown: false
+          }}/>
+          <Stack.Screen 
+          name ="Housing"
+          component ={HousingScreen}
+          options={{
+            headerShown: false
+          }}/>
+          <Stack.Screen 
+          name ="Jobs"
+          component ={JobScreen}
+          options={{
+            headerShown: false
+          }}/>
+          <Stack.Screen 
+          name ="Meeting"
+          component ={MeetingScreen}
+          options={{
+            headerShown: false
+          }}/>
+          <Stack.Screen 
+          name ="Forums"
+          component ={ForumScreen}
+          options={{
+            headerShown: false
+          }}/>
+          <Stack.Screen 
+          name ="Therapy"
+          component ={TherapyScreen}
+          options={{
+            headerShown: false
+          }}/>
+          <Stack.Screen 
+          name ="Awards"
+          component ={AwardScreen}
+          options={{
+            headerShown: false
+          }}/>
           <Stack.Screen 
             name ="OnboardingLogin"
             component={OnboardingLogin}
             options={{
               headerShown: false
             }}/>
-            <Stack.Screen 
+          <Stack.Screen 
             name ="Register"
             component={Register}
             options={{
               headerShown: false
             }}/>
-            <Stack.Screen 
+          <Stack.Screen 
             name ="ForgetPassword"
             component={ForgetPassword}
             options={{
               headerShown: false
             }}/>
-            <Stack.Screen 
+          <Stack.Screen 
             name ="Dashboard"
             component={Dashboard}
             options={{
               headerShown: false
             }}/>
-            <Stack.Screen 
+          <Stack.Screen 
             name ="TabNavigator"
             component={TabNavigator}
             options={{

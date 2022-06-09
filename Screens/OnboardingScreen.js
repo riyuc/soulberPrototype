@@ -10,7 +10,7 @@ export default function OnboardingScreen({navigation}) {
       source={onboarding}
       style={styles.container}>
       <FlatButton text="Get Started" onPress={()=>
-      navigation.navigate('OnboardingLogin', {name: 'Login'}
+      navigation.navigate('Dependant', {name: 'Dependant'}
       )}/>
     </ImageBackground>
   );
